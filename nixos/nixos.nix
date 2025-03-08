@@ -17,7 +17,7 @@ in {
   ];
 
   hyprland.enable = true;
-  asusLaptop.enable = false;
+  lenovoLaptop.enable = false;
 
   users.users.${username} = {
     isNormalUser = true;
