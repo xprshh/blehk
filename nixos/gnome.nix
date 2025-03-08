@@ -15,6 +15,13 @@
         qogir-icon-theme
         gnome-extension-manager
         wl-clipboard
+        mesa
+        mesa_drivers
+        libglvnd
+        vulkan-loader
+        vulkan-validation-layers
+        clinfo
+        intel-media-driver
       ];
 
       gnome.excludePackages =
