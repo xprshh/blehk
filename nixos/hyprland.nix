@@ -1,4 +1,4 @@
-{
+b{
   pkgs,
   inputs,
   config,
@@ -63,7 +63,7 @@
       clinfo
       intel-media-driver
       kdenlive
-      boxes
+      gnome-boxes
    ];
 
     systemd = {
