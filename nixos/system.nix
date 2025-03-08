@@ -28,8 +28,13 @@
     git
     wget
     blueberry
-    nixld
+    nix-ld
     libnotify
+    gtklock
+    pam
+    pkg-config
+    scdoc
+    gtk-session-lock
   ];
 
   # services
