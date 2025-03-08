@@ -45,16 +45,10 @@
       qogir-icon-theme
       loupe
       nautilus
-      baobab
       gnome-text-editor
       gnome-calendar
-      gnome-boxes
-      gnome-system-monitor
       gnome-control-center
-      gnome-weather
       gnome-calculator
-      gnome-clocks
-      gnome-software # for flatpak
       wl-gammactl
       wl-clipboard
       wayshot
