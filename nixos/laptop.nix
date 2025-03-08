@@ -23,6 +23,12 @@
       ];
     };
 
+    # Enable OpenCL
+    services.hardware.opencl = {
+      enable = true;
+      package = pkgs.intel-compute-runtime;
+    };
+
     # Use the modesetting driver for Intel GPUs
     services.xserver.videoDrivers = [ "modesetting" ];
 
@@ -34,3 +40,4 @@
     ];
   };
 }
+
