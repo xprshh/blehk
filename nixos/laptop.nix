@@ -1,35 +1,36 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }: {
-  options.asusLaptop = {
+  options.lenovoLaptop = {
     enable = lib.mkEnableOption "Lenovo Laptop";
   };
 
-  config = lib.mkIf config.asusLaptop.enable {
-    # asusctl (only needed if you have an ASUS laptop)
-    services.asusd = {
-      enable = true;
-      enableUserService = true;
-    };
-
-    # Enable OpenGL and Vulkan for Intel
+  config = lib.mkIf config.lenovoLaptop.enable {
+    # Intel GPU configuration
     hardware.opengl = {
       enable = true;
       driSupport = true;
       driSupport32Bit = true;
+      extraPackages = with pkgs; [
+        intel-compute-runtime  # Intel OpenCL/Vulkan support
+        mesa
+        vulkan-tools
+        libva
+        intel-vaapi-driver  # Intel video acceleration
+      ];
     };
 
-    # Use the modesetting driver for Intel
+    # Use the modesetting driver for Intel GPUs
     services.xserver.videoDrivers = [ "modesetting" ];
 
-    # Make sure Mesa and Vulkan are installed
-    environment.systemPackages = with config.boot.kernelPackages; [
+    # Optional: Add additional Intel-specific optimizations
+    environment.systemPackages = with pkgs; [
       mesa
       vulkan-tools
-      libva
-      intel-vaapi-driver  # For Intel video acceleration
+      libva-utils
     ];
   };
 }
