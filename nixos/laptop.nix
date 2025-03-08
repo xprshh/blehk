@@ -4,43 +4,32 @@
   ...
 }: {
   options.asusLaptop = {
-    enable = lib.mkEnableOption "Asus Laptop";
+    enable = lib.mkEnableOption "Lenovo Laptop";
   };
 
   config = lib.mkIf config.asusLaptop.enable {
-    # asusctl
+    # asusctl (only needed if you have an ASUS laptop)
     services.asusd = {
       enable = true;
       enableUserService = true;
     };
 
-    # nvidia
+    # Enable OpenGL and Vulkan for Intel
     hardware.opengl = {
       enable = true;
       driSupport = true;
       driSupport32Bit = true;
     };
 
-    services.xserver.videoDrivers = ["nvidia"];
+    # Use the modesetting driver for Intel
+    services.xserver.videoDrivers = [ "modesetting" ];
 
-    hardware.nvidia = {
-      prime = {
-        offload.enable = true;
-        offload.enableOffloadCmd = true;
-        nvidiaBusId = "PCI:1:0:0";
-        amdgpuBusId = "PCI:6:0:0";
-      };
-
-      modesetting.enable = true;
-
-      powerManagement = {
-        enable = true;
-        finegrained = true;
-      };
-
-      open = true;
-      nvidiaSettings = false; # gui app
-      package = config.boot.kernelPackages.nvidiaPackages.latest;
-    };
+    # Make sure Mesa and Vulkan are installed
+    environment.systemPackages = with config.boot.kernelPackages; [
+      mesa
+      vulkan-tools
+      libva
+      intel-vaapi-driver  # For Intel video acceleration
+    ];
   };
 }
