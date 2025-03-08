@@ -8,7 +8,7 @@
     "db" = "distrobox";
     "tree" = "eza --tree";
     "nv" = "nvim";
-
+    "ls" = "eza";
     "ll" = "ls";
     "éé" = "ls";
     "és" = "ls";
