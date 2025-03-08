@@ -19,7 +19,7 @@
 
       gnome.excludePackages =
         (with pkgs; [
-          # gnome-text-editor
+          gnome-text-editor
           gnome-console
           gnome-photos
           gnome-tour
@@ -45,6 +45,8 @@
           gnome-shell-extensions
           gnome-maps
           gnome-font-viewer
+          baobab
+          gnome-clocks
         ]);
     };
 
