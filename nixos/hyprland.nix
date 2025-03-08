@@ -55,8 +55,8 @@
       swww
       obs-studio
       obsidian
-      pitivi
-    ];
+      davinci-resolve-studio
+   ];
 
     systemd = {
       user.services.polkit-gnome-authentication-agent-1 = {
