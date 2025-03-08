@@ -62,7 +62,7 @@
       vulkan-validation-layers
       clinfo
       intel-media-driver
-      flowblade
+      lightworks
    ];
 
     systemd = {
