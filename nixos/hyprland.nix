@@ -45,10 +45,8 @@
       qogir-icon-theme
       loupe
       nautilus
-      gnome-text-editor
       gnome-calendar
       gnome-control-center
-      gnome-calculator
       wl-gammactl
       wl-clipboard
       wayshot
