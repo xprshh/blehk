@@ -30,11 +30,6 @@
     blueberry
     nix-ld
     libnotify
-    gtklock
-    pam
-    pkg-config
-    scdoc
-    gtk-session-lock
   ];
 
   # services
