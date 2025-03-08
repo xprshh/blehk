@@ -55,7 +55,6 @@
       swww
       obs-studio
       obsidian
-      davinci-resolve
    ];
 
     systemd = {
