@@ -27,7 +27,9 @@
     neovim
     git
     wget
-    emacs
+    blueberry
+    nixld
+    libnotify
   ];
 
   # services
