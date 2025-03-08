@@ -38,6 +38,7 @@
     blueberry
     nix-ld
     libnotify
+    thunderbird
   ];
 
   # services
