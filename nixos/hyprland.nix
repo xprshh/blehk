@@ -62,7 +62,8 @@
       vulkan-validation-layers
       clinfo
       intel-media-driver
-      lightworks
+      protonvpn-gui
+      kdenlive
    ];
 
     systemd = {
