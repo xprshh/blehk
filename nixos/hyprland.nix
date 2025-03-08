@@ -53,6 +53,9 @@
       pavucontrol
       brightnessctl
       swww
+      obs-studio
+      obsidian
+      pitivi
     ];
 
     systemd = {
