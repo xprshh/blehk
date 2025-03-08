@@ -12,13 +12,14 @@ in {
     ./locale.nix
     ./nautilus.nix
     ./laptop.nix
+    ./asus-laptop.nix
     ./hyprland.nix
     ./gnome.nix
   ];
 
   hyprland.enable = true;
   lenovoLaptop.enable = false;
-
+  asusLaptop.enable = false;
   users.users.${username} = {
     isNormalUser = true;
     initialPassword = username;
