@@ -55,6 +55,13 @@
       swww
       obs-studio
       obsidian
+      mesa
+      mesa_drivers
+      libglvnd
+      vulkan-loader
+      vulkan-validation-layers
+      clinfo
+      intel-media-driver
    ];
 
     systemd = {
