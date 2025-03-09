@@ -13,7 +13,8 @@
    options = "--delete-older-than 7d";
  };
 
-
+   hardware.logitech.wireless.enable = true;
+   hardware.logitech.wireless.enableGraphical = true;
 
   # camera
   programs.droidcam.enable = true;
@@ -38,7 +39,7 @@
     blueberry
     nix-ld
     libnotify
-    thunderbird
+    vscode
   ];
 
   # services
