@@ -1,7 +1,7 @@
 {pkgs, ...}: let
   nx-clean = pkgs.writeShellScriptBin "nx-clean" ''
-   sudo nix-collect-garbage --delete-older-than 2d
-   sudo nix-store --gc
+sudo nix-env --delete-generations old
+sudo nix-store --gc
    sudo nix-store --optimise
   '';
 in {
