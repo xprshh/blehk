@@ -40,7 +40,6 @@ in {
       exec-once = [
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
-        "fragments"
       ];
 
       monitor = [
@@ -116,7 +115,8 @@ in {
       in
         [
           "CTRL SHIFT, R,  ${e} quit; ags -b hypr"
-          "SUPER, R,       ${e} -t launcher"
+          "ALT, R,       ${e} -t launcher"
+          "SUPER, R,     ${e} -t launcher"
           "SUPER, Tab,     ${e} -t overview"
           ",XF86PowerOff,  ${e} -r 'powermenu.shutdown()'"
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
@@ -124,6 +124,7 @@ in {
           "SHIFT,Print,    ${e} -r 'recorder.screenshot(true)'"
           "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
           "SUPER, W, exec, firefox"
+          "ALT, W, exec, firefox"
           "SUPER, E, exec, wezterm -e lf"
 
           # youtube
@@ -133,7 +134,9 @@ in {
           "CTRL ALT, Delete, exit"
           "ALT, Q, killactive"
           "SUPER, F, togglefloating"
+          "ALT, F, togglefloating"
           "SUPER, G, fullscreen"
+          "ALT, G, Fullscreen"
           "SUPER, O, fakefullscreen"
           "SUPER, P, togglesplit"
 
