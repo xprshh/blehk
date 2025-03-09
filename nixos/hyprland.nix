@@ -45,6 +45,7 @@
       qogir-icon-theme
       loupe
       nautilus
+      gnome-calendar
       gnome-control-center
       wl-gammactl
       wl-clipboard
