@@ -45,7 +45,6 @@
       qogir-icon-theme
       loupe
       nautilus
-      gnome-calendar
       gnome-control-center
       wl-gammactl
       wl-clipboard
@@ -57,14 +56,9 @@
       obsidian
       mesa
       mesa_drivers
-      libglvnd
-      vulkan-loader
-      vulkan-validation-layers
-      clinfo
       intel-media-driver
       pitivi
-      vscode
-   ];
+    ];
 
     systemd = {
       user.services.polkit-gnome-authentication-agent-1 = {
