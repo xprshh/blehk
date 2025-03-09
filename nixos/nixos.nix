@@ -58,6 +58,7 @@ in {
         ../home-manager/theme.nix
         ../home-manager/tmux.nix
         ../home-manager/wezterm.nix
+        ../home-manager/vscode.nix
         ./home.nix
       ];
     };
