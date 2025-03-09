@@ -100,15 +100,4 @@
     nixd
     nixpkgs-fmt
   ];
-
-  # Impermanence Persistent For VsCode
-  home.persistence."/nix/persistent${config.home.homeDirectory}" = {
-    directories = [
-      ".config/Code/User"
-      ".vscode/extensions"
-    ];
-    files = [ ];
-    allowOther = false;
-    removePrefixDirectory = false;
-  };
 }
