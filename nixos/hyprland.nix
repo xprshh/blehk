@@ -63,6 +63,7 @@
       clinfo
       intel-media-driver
       pitivi
+      vscode
    ];
 
     systemd = {
