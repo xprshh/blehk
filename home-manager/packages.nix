@@ -5,6 +5,7 @@
     ./scripts/nx-switch.nix
     ./scripts/vault.nix
     ./scripts/rust-dev.nix
+    ./scripts/vala-dev.nix
   ];
 
   packages = with pkgs; {
