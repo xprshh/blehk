@@ -62,8 +62,7 @@
       vulkan-validation-layers
       clinfo
       intel-media-driver
-      gtklock
-      vscode
+      pitivi
    ];
 
     systemd = {
