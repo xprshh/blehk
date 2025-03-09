@@ -62,8 +62,8 @@
       vulkan-validation-layers
       clinfo
       intel-media-driver
-      kdenlive
-      gnome-boxes
+      gtklock
+      vscode
    ];
 
     systemd = {
