@@ -122,6 +122,7 @@ in {
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
           ",Print,         ${e} -r 'recorder.screenshot()'"
           "SHIFT,Print,    ${e} -r 'recorder.screenshot(true)'"
+          "ALT, Return, exec, xterm" # XTERM IS A SYMLINK
           "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
           "SUPER, W, exec, firefox"
           "ALT, W, exec, firefox"
@@ -139,7 +140,6 @@ in {
           "ALT, G, Fullscreen"
           "SUPER, O, fakefullscreen"
           "SUPER, P, togglesplit"
-
           (mvfocus "k" "u")
           (mvfocus "j" "d")
           (mvfocus "l" "r")
@@ -243,3 +243,4 @@ in {
     };
   };
 }
+
