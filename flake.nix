@@ -63,7 +63,7 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    matugen.url = "github:InioX/matugen?ref=v2.2.0";
+    matugen.url = "github:InioX/matugen?ref=v2.4.1";
     ags.url = "github:Aylur/ags";
     astal.url = "github:Aylur/astal";
 
