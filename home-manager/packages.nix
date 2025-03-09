@@ -6,7 +6,7 @@
     ./scripts/vault.nix
     ./scripts/rust-dev.nix
     ./scripts/vala-dev.nix
-    ./nx-clean.nix
+    ./scripts/nx-clean.nix
   ];
 
   packages = with pkgs; {
