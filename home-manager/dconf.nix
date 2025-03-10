@@ -123,7 +123,7 @@ with lib.hm.gvariant; {
     };
 
     "system/locale" = {
-      region = "en_US.UTF-8";
+      region = "hu_HU.UTF-8";
     };
 
     "org/virt-manager/virt-manager/connections" = {
@@ -136,3 +136,5 @@ with lib.hm.gvariant; {
     };
   };
 }
+
+# region = "en_US.UTF-8";     
