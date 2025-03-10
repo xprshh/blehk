@@ -22,6 +22,8 @@
         vulkan-validation-layers
         clinfo
         intel-media-driver
+        bottles
+        spotify
       ];
 
       gnome.excludePackages =
