@@ -25,7 +25,6 @@
     podman.enable = true;
     docker.enable = true;
     libvirtd.enable = true;
-    waydroid.enable = true;
   };
 
   # dconf
