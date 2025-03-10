@@ -47,19 +47,15 @@
       nautilus
       gnome-calendar
       gnome-control-center
+      obs-studio
+      obsidian
+      bottles
       wl-gammactl
       wl-clipboard
       wayshot
       pavucontrol
       brightnessctl
       swww
-      obs-studio
-      obsidian
-      mesa
-      mesa_drivers
-      intel-media-driver
-      pitivi
-      bottles
     ];
 
     systemd = {
