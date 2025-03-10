@@ -59,6 +59,7 @@
       mesa_drivers
       intel-media-driver
       pitivi
+      bottles
     ];
 
     systemd = {
