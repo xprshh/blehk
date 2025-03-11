@@ -4,8 +4,8 @@
     ./scripts/blocks.nix
     ./scripts/nx-switch.nix
     ./scripts/vault.nix
-    ./scripts/rust-dev.nix
-    ./scripts/vala-dev.nix
+  #  ./scripts/rust-dev.nix
+   # ./scripts/vala-dev.nix
     ./scripts/nx-clean.nix
   ];
 
