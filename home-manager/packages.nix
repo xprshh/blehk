@@ -7,6 +7,7 @@
   #  ./scripts/rust-dev.nix
    # ./scripts/vala-dev.nix
     ./scripts/nx-clean.nix
+    ./scripts/sleep-or-die.nix
   ];
 
   packages = with pkgs; {
