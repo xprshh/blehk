@@ -161,6 +161,7 @@ const options = mkOptions(OPTIONS, {
                     "wezterm",
                     "org.gnome.Nautilus",
                     "org.gnome.Calendar",
+                    "obsidian"
                     "spotify",
                 ],
             ]),
